@@ -9,9 +9,11 @@ public class HumanToRock : MonoBehaviour
 
     private Rigidbody2D _rigidbody;
     private float _current;
+    private Animator _animator;
 
     private void Start()
     {
+        _animator = GetComponent<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
@@ -22,18 +24,40 @@ public class HumanToRock : MonoBehaviour
 
     private void Update()
     {
-        if (_rigidbody.velocity.x == 0f)
+        //Debug.Log("turnToRock: " + _current);
+        var xSpeed = Input.GetAxis("Horizontal");
+        Debug.Log("My velocity: " + xSpeed);
+        if (xSpeed == 0f)
         {
+            _animator.SetBool("isMoving", false);
             _current += rate * Time.deltaTime;
         }
         else
         {
+            Debug.Log("I MOVE");
+            _animator.SetBool("isMoving", true);
             _current = 0f;
         }
 
         if (_current > 100)
         {
             PlayerSwitcherEventSystem.SwitchFromHumanToStone();
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.IsWater())
+        {
+            _animator.SetBool("soaks", true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.IsWater())
+        {
+            _animator.SetBool("soaks", false);
         }
     }
 }

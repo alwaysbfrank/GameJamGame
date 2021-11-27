@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &1720880322234687500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2637329716082942096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43d4b3de01ed52c49a95890533a407be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rate: 36.1
---- !u!114 &1720880322234687501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2637329716082942096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 154e8086d93dfd748915fc8bd7ded2e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heatRate: 66.6
-  cooldownRate: 47.9
 --- !u!1 &1720880322581555450
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +65,7 @@ MonoBehaviour:
   gasThreshold: 100
   heatPower: 36.1
   tolerance: 1
+  particleSystem: {fileID: 0}
 --- !u!114 &1720880323582890391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,7 +78,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a31da171fe3a547b33866feb0b55d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 21.7
+  rate: 30.8
+--- !u!114 &1720880322234687500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2637329716082942096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43d4b3de01ed52c49a95890533a407be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rate: 52.8
+--- !u!114 &1720880322234687501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2637329716082942096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 154e8086d93dfd748915fc8bd7ded2e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heatRate: 66.6
+  cooldownRate: 47.9
 --- !u!1001 &1720880322135264657
 PrefabInstance:
   m_ObjectHideFlags: 0

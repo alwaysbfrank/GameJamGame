@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 658278d90b925764399397f1d1860b8a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5957677033710007231
+    second: PlayerIdleToStoneTransformation_0
+  - first:
+      213: -5901656763677376704
+    second: PlayerIdleToStoneTransformation_1
+  - first:
+      213: -6147386810856031061
+    second: PlayerIdleToStoneTransformation_2
+  - first:
+      213: 893974597004713320
+    second: PlayerIdleToStoneTransformation_3
+  - first:
+      213: -548186674110676680
+    second: PlayerIdleToStoneTransformation_4
+  - first:
+      213: 2458699541017797464
+    second: PlayerIdleToStoneTransformation_5
+  - first:
+      213: -7222794571660710672
+    second: PlayerIdleToStoneTransformation_6
+  - first:
+      213: 1997744556032967520
+    second: PlayerIdleToStoneTransformation_7
+  - first:
+      213: 1114429606417342290
+    second: PlayerIdleToStoneTransformation_8
+  - first:
+      213: -3538752382684434163
+    second: PlayerIdleToStoneTransformation_9
+  - first:
+      213: -3947752758002225996
+    second: PlayerIdleToStoneTransformation_10
+  - first:
+      213: -1998696949152664934
+    second: PlayerIdleToStoneTransformation_11
+  - first:
+      213: -3660007753990796523
+    second: PlayerIdleToStoneTransformation_12
+  - first:
+      213: -6714608469899824701
+    second: PlayerIdleToStoneTransformation_13
+  - first:
+      213: -8930165968903718610
+    second: PlayerIdleToStoneTransformation_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +85,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +116,336 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c463f8d44125da0800000000000000
+      internalID: -5957677033710007231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_1
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f7ab6117a191ea0800000000000000
+      internalID: -5901656763677376704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_2
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac310a044810baa0800000000000000
+      internalID: -6147386810856031061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_3
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d50b4d829086c00800000000000000
+      internalID: 893974597004713320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_4
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831c703df137468f0800000000000000
+      internalID: -548186674110676680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_5
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85328cfa43e0f1220800000000000000
+      internalID: 2458699541017797464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_6
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc2b86ea9a73cb90800000000000000
+      internalID: -7222794571660710672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_7
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063c056d61a69bb10800000000000000
+      internalID: 1997744556032967520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_8
+      rect:
+        serializedVersion: 2
+        x: 2035
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f1fa192df377f00800000000000000
+      internalID: 1114429606417342290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_9
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01f6020573d3eec0800000000000000
+      internalID: -3538752382684434163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_10
+      rect:
+        serializedVersion: 2
+        x: 2543
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc653e58c3c639c0800000000000000
+      internalID: -3947752758002225996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_11
+      rect:
+        serializedVersion: 2
+        x: 2797
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92391cd6b33344e0800000000000000
+      internalID: -1998696949152664934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_12
+      rect:
+        serializedVersion: 2
+        x: 3051
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b043cd65a053dc0800000000000000
+      internalID: -3660007753990796523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_13
+      rect:
+        serializedVersion: 2
+        x: 3305
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1bac11c2be0d2a0800000000000000
+      internalID: -6714608469899824701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerIdleToStoneTransformation_14
+      rect:
+        serializedVersion: 2
+        x: 3559
+        y: 0
+        width: 250.06667
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2936368d5da11480800000000000000
+      internalID: -8930165968903718610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
