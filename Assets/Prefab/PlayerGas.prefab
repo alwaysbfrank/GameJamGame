@@ -175,7 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154e8086d93dfd748915fc8bd7ded2e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gasThreshold: 100
-  heatPower: 32.5
-  cooloffPower: 32.6
-  tolerance: 0.956
+  heatRate: 0
+  cooldownRate: 0
+  partSys: {fileID: 5541500747095054345, guid: 9d1bfabece5f217429da59540f6d39d6, type: 3}
