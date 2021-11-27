@@ -12,6 +12,7 @@ public class RockMechanics : MonoBehaviour
     public float rotationSpeed;
     private bool isGrounded;
     public GameObject normal;
+    public ParticleSystem partSys;
 
     void Start()
     {
@@ -47,21 +48,26 @@ public class RockMechanics : MonoBehaviour
     }
 
 
-
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
         }
-        else if (collision.gameObject.CompareTag("Water"))
-        {
+    }
 
-            Instantiate(normal, transform);
-            gameObject.active = false;
-            // zamienia sie w ludzika
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Water"))
+        {
+            partSys.Play();
+            //Instantiate(normal, transform.position, new Quaternion(0, 0, 0, 0));
+            //gameObject.SetActive(false);
         }
     }
+
+
+
 
     private void OnCollisionStay2D(Collision2D collision)
     {
