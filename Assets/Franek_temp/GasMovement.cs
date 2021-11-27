@@ -8,11 +8,14 @@ public class GasMovement : MonoBehaviour
     [Range(0, 100)] public float upwardsAcceleration;
     [Range(0, 1000)] public float sidewaysSpeed;
     [Range(0.1f, 0.2f)] public float jumpOffset;
+    [Range(0.1f, 1f)] public float dashOffset;
     [Range(0, 100)] public float jumpPower;
+    [Range(0, 100)] public float dashPower;
 
     private Rigidbody2D _rigidbody;
 
     private float _lastJump;
+    private float _lastDash;
 
     private SpriteRenderer _spriteRenderer;
     // Start is called before the first frame update
@@ -21,7 +24,8 @@ public class GasMovement : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _rigidbody = GetComponent<Rigidbody2D>();
         _rigidbody.gravityScale = 0f;
-        _lastJump = Time.time;
+        _lastJump = Time.time - jumpOffset;
+        _lastDash = Time.time - dashOffset;
     }
 
     // Update is called once per frame
@@ -30,6 +34,7 @@ public class GasMovement : MonoBehaviour
         MoveSideways();
         AccelerateUpwards();
         TryJump();
+        TryDash();
     }
 
     void AccelerateUpwards()
@@ -51,7 +56,10 @@ public class GasMovement : MonoBehaviour
 
     private void TryFlipSprite(float xDisplacement)
     {
-        _spriteRenderer.flipX = xDisplacement < 0;
+        if (xDisplacement != 0)
+        {
+            _spriteRenderer.flipX = xDisplacement < 0;
+        }
     }
 
     void TryJump()
@@ -60,6 +68,17 @@ public class GasMovement : MonoBehaviour
         {
             _lastJump = Time.time;
             _rigidbody.AddForce(Vector2.down * jumpPower, ForceMode2D.Impulse);
+        }
+    }
+
+    void TryDash()
+    {
+        if (Input.GetButtonDown("Fire1") && _lastDash + dashOffset < Time.time)
+        {
+            Debug.Log("Dash");
+            _lastDash = Time.time;
+            var direction = _spriteRenderer.flipX ? Vector2.left : Vector2.right;
+            _rigidbody.AddForce(direction * dashPower, ForceMode2D.Impulse);
         }
     }
 }
