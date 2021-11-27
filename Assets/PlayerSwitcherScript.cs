@@ -29,7 +29,7 @@ public class PlayerSwitcherScript : MonoBehaviour
         PlayerSwitcherEventSystem.FromHumanToStone += FromHumanToStone;
         PlayerSwitcherEventSystem.FromStoneToHuman += FromStoneToHuman;
     }
-    
+
     private void OnDisable()
     {
         PlayerSwitcherEventSystem.FromGasToHuman -= FromGasToHuman;
