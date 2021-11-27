@@ -3,8 +3,7 @@
 --- !u!1 &3708827466246220470
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2061337117265717397, guid: acb570f26cbeb724abb539176c65cd41,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
@@ -25,8 +24,7 @@ GameObject:
 --- !u!4 &3708827466246220466
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2061337117265717393, guid: acb570f26cbeb724abb539176c65cd41,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3708827466246220470}
@@ -40,8 +38,7 @@ Transform:
 --- !u!212 &3708827466246220469
 SpriteRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2061337117265717398, guid: acb570f26cbeb724abb539176c65cd41,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3708827466246220470}
@@ -92,8 +89,7 @@ SpriteRenderer:
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2061337117265717396, guid: acb570f26cbeb724abb539176c65cd41,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3708827466246220470}
@@ -113,8 +109,7 @@ Rigidbody2D:
 --- !u!61 &3708827466246220468
 BoxCollider2D:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2061337117265717399, guid: acb570f26cbeb724abb539176c65cd41,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3708827466246220470}
@@ -141,8 +136,7 @@ BoxCollider2D:
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2061337117265717395, guid: acb570f26cbeb724abb539176c65cd41,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3708827466246220470}
@@ -160,8 +154,7 @@ Animator:
 --- !u!114 &3708827466246220467
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2061337117265717392, guid: acb570f26cbeb724abb539176c65cd41,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3708827466246220470}
@@ -173,4 +166,5 @@ MonoBehaviour:
   speed: 8
   jumpForce: 15
   sprintSpeed: 16
+  fallDamageThreshold: -15
   isStone: 0

@@ -7,6 +7,7 @@ public class DefaultMovment : MonoBehaviour
     public int speed;
     public int jumpForce;
     public int sprintSpeed;
+    public int fallDamageThreshold;
     public bool isStone;
 
     private Rigidbody2D rb;
@@ -70,7 +71,7 @@ public class DefaultMovment : MonoBehaviour
                 maxYVel = rb.velocity.y;
             }
         }
-        if (maxYVel < -15 && isGrounded)
+        if (maxYVel < fallDamageThreshold && isGrounded)
         {
             //Destroy(gameObject);
             Debug.Log("Death");
