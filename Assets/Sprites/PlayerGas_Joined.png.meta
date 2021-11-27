@@ -1,7 +1,19 @@
 fileFormatVersion: 2
-guid: f058e0952965e8a469d51445615a5838
+guid: 006c02a0586e9af4c806d31c24d19752
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6210993130669282101
+    second: PlayerGas_Joined_0
+  - first:
+      213: 4246771656109968109
+    second: PlayerGas_Joined_1
+  - first:
+      213: 5979332775198912347
+    second: PlayerGas_Joined_2
+  - first:
+      213: 2789693269133186330
+    second: PlayerGas_Joined_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -83,18 +95,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -104,7 +104,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 264.75
+        width: 250
         height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -123,9 +123,9 @@ TextureImporter:
       name: PlayerGas_Joined_1
       rect:
         serializedVersion: 2
-        x: 264
+        x: 259
         y: 0
-        width: 251
+        width: 244
         height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -144,9 +144,9 @@ TextureImporter:
       name: PlayerGas_Joined_2
       rect:
         serializedVersion: 2
-        x: 521
+        x: 525
         y: 0
-        width: 285
+        width: 265
         height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -165,9 +165,9 @@ TextureImporter:
       name: PlayerGas_Joined_3
       rect:
         serializedVersion: 2
-        x: 812
+        x: 818
         y: 0
-        width: 245
+        width: 241
         height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
