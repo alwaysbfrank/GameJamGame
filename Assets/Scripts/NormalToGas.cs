@@ -40,7 +40,7 @@ public class NormalToGas : MonoBehaviour
 
     private void Update()
     {
-        //LogState();
+        LogState();
         var shouldHeatUp = isCurrentlyHeated && currentTemp < gasThreshold;
         if (shouldHeatUp)
         {
@@ -52,6 +52,11 @@ public class NormalToGas : MonoBehaviour
         if (shouldCoolDown)
         {
             CoolDown();
+        }
+
+        if (ShouldBeGas())
+        {
+            PlayerSwitcherEventSystem.SwitchFromHumanToGas();
         }
     }
 
