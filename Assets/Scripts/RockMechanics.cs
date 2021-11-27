@@ -11,6 +11,7 @@ public class RockMechanics : MonoBehaviour
     private float timer;
     public float rotationSpeed;
     private bool isGrounded;
+    public GameObject normal;
 
     void Start()
     {
@@ -52,6 +53,13 @@ public class RockMechanics : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+        }
+        else if (collision.gameObject.CompareTag("Water"))
+        {
+
+            Instantiate(normal, transform);
+            gameObject.active = false;
+            // zamienia sie w ludzika
         }
     }
 
