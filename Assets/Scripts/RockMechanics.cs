@@ -71,7 +71,7 @@ public class RockMechanics : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Grofeund"))
         {
             isGrounded = true;
         }

@@ -2,24 +2,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class NormalToGas : MonoBehaviour
 {
 
-    [Range(0, 100)] public float gasThreshold;
-    [Range(0, 100)] public float heatPower;
-    [Range(0, 100)] public float cooloffPower;
-    [Range(0, 1)] public float tolerance;
+    [Range(0, 100)] public float heatRate;
+    [Range(0, 100)] public float cooldownRate;
 
     private float currentTemp;
 
     private bool isCurrentlyHeated;
     
-    // Start is called before the first frame update
     void Start()
     {
-        currentTemp = 0f;
         isCurrentlyHeated = false;
+    }
+
+    private void OnEnable()
+    {
+        currentTemp = 0f;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -41,7 +43,7 @@ public class NormalToGas : MonoBehaviour
     private void Update()
     {
         LogState();
-        var shouldHeatUp = isCurrentlyHeated && currentTemp < gasThreshold;
+        var shouldHeatUp = isCurrentlyHeated && currentTemp < 100f;
         if (shouldHeatUp)
         {
             HeatUp();
@@ -85,22 +87,17 @@ public class NormalToGas : MonoBehaviour
 
     private void HeatUp()
     {
-        currentTemp = Math.Min(gasThreshold, currentTemp + heatPower * Time.deltaTime);
+        currentTemp += heatRate * Time.deltaTime;
     }
 
     private void CoolDown()
     {
-        currentTemp = Math.Max(0f, currentTemp - cooloffPower * Time.deltaTime);
+        currentTemp = Math.Max(0f, currentTemp - cooldownRate * Time.deltaTime);
     }
 
     public bool ShouldBeGas()
     {
-        return currentTemp > gasThreshold - tolerance;
-    }
-
-    public bool ShouldBeNormal()
-    {
-        return currentTemp < gasThreshold - tolerance;
+        return currentTemp > 100f;
     }
 }
 

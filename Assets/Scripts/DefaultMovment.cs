@@ -33,7 +33,6 @@ public class DefaultMovment : MonoBehaviour
         Move();
         Jump();
         Sprint();
-        //GameEventSystem.Instance.SetPlayerStone(isStone);
     }
 
     void Move()
