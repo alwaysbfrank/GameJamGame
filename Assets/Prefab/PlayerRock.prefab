@@ -147,4 +147,4 @@ MonoBehaviour:
   delay: 1
   rotationSpeed: 50
   normal: {fileID: 0}
-  partSys: {fileID: 0}
+  partSys: {fileID: 9154455115817955223, guid: 388dcdc5275eb0140905aa992d715ca0, type: 3}

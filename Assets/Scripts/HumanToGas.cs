@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class NormalToGas : MonoBehaviour
+public class HumanToGas : MonoBehaviour
 {
 
     [Range(0, 100)] public float heatRate;
@@ -13,7 +13,7 @@ public class NormalToGas : MonoBehaviour
     private float currentTemp;
 
     private bool isCurrentlyHeated;
-    
+
     void Start()
     {
         isCurrentlyHeated = false;
