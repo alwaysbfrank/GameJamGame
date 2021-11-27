@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - New tag
-  - Heat
+  - Ground
+  - Water
+  - PlayerRock
   layers:
   - Default
   - TransparentFX
