@@ -11,7 +11,7 @@ public class DefaultMovment : MonoBehaviour
     public bool isStone;
 
     private Rigidbody2D rb;
-    private bool isGrounded;
+    //private bool isGrounded;
     private int defultSpeed;
     private SpriteRenderer sr;
     private float maxYVel;
@@ -23,7 +23,7 @@ public class DefaultMovment : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         defultSpeed = speed;
-        isGrounded = true;
+        //isGrounded = true;
         isStone = false;
         //animator = GetComponent<Animator>();
         rb.freezeRotation = true;
@@ -57,21 +57,21 @@ public class DefaultMovment : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && rb.velocity.y == 0)
         {
-            isGrounded = false;
+            //isGrounded = false;
             maxYVel = 0;
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             //animator.SetBool("Jump", true);
         }
-        if (!isGrounded)
+        if (rb.velocity.y != 0)
         {
             if (rb.velocity.y < maxYVel)
             {
                 maxYVel = rb.velocity.y;
             }
         }
-        if (maxYVel < fallDamageThreshold && isGrounded)
+        if (maxYVel < fallDamageThreshold && rb.velocity.y == 0)
         {
             //Destroy(gameObject);
             Debug.Log("Death");
@@ -80,7 +80,7 @@ public class DefaultMovment : MonoBehaviour
 
     void Sprint()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && rb.velocity.y == 0)
         {
             speed = sprintSpeed;
         }
@@ -90,20 +90,20 @@ public class DefaultMovment : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-            //animator.SetBool("Jump", false);
-        }
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Ground"))
+    //    {
+    //        isGrounded = true;
+    //        //animator.SetBool("Jump", false);
+    //    }
+    //}
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
-        }
-    }
+    //private void OnCollisionExit2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Ground"))
+    //    {
+    //        isGrounded = false;
+    //    }
+    //}
 }
