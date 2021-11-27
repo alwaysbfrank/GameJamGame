@@ -6,6 +6,8 @@ TagManager:
   tags:
   - New tag
   - Heat
+  - Ground
+  - Water
   layers:
   - Default
   - TransparentFX
