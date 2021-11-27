@@ -8,6 +8,8 @@ TagManager:
   - Heat
   - Ground
   - Water
+  - PlayerRock
+  - PlayerGas
   layers:
   - Default
   - TransparentFX
