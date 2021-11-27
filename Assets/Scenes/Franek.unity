@@ -277,7 +277,9 @@ MonoBehaviour:
   jumpOffset: 0.1741
   dashOffset: 0.583
   jumpPower: 6.3
-  dashPower: 44.8
+  dashPower: 93.7
+  dashAccelerationTime: 0.203
+  dashBrakePower: 70.6
 --- !u!70 &339882003
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
