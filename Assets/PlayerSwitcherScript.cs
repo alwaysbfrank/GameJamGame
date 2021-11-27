@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -19,6 +20,22 @@ public class PlayerSwitcherScript : MonoBehaviour
     {
         currentState = 0;
         ActivateHuman(transform.position);
+    }
+
+    private void OnEnable()
+    {
+        PlayerSwitcherEventSystem.FromGasToHuman += FromGasToHuman;
+        PlayerSwitcherEventSystem.FromHumanToGas += FromHumanToGas;
+        PlayerSwitcherEventSystem.FromHumanToStone += FromHumanToStone;
+        PlayerSwitcherEventSystem.FromStoneToHuman += FromStoneToHuman;
+    }
+    
+    private void OnDisable()
+    {
+        PlayerSwitcherEventSystem.FromGasToHuman -= FromGasToHuman;
+        PlayerSwitcherEventSystem.FromHumanToGas -= FromHumanToGas;
+        PlayerSwitcherEventSystem.FromHumanToStone -= FromHumanToStone;
+        PlayerSwitcherEventSystem.FromStoneToHuman -= FromStoneToHuman;
     }
 
     void FromHumanToStone()
