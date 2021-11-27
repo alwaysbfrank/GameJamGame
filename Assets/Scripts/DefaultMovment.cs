@@ -13,6 +13,7 @@ public class DefaultMovment : MonoBehaviour
     private bool isGrounded;
     private int defultSpeed;
     private SpriteRenderer sr;
+    private float maxYVel;
     //private Animator animator;
 
 
@@ -23,7 +24,6 @@ public class DefaultMovment : MonoBehaviour
         defultSpeed = speed;
         isGrounded = true;
         isStone = false;
-
         //animator = GetComponent<Animator>();
         rb.freezeRotation = true;
     }
@@ -60,8 +60,21 @@ public class DefaultMovment : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             isGrounded = false;
+            maxYVel = 0;
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             //animator.SetBool("Jump", true);
+        }
+        if (!isGrounded)
+        {
+            if (rb.velocity.y < maxYVel)
+            {
+                maxYVel = rb.velocity.y;
+            }
+        }
+        if (maxYVel < -15 && isGrounded)
+        {
+            //Destroy(gameObject);
+            Debug.Log("Death");
         }
     }
 
