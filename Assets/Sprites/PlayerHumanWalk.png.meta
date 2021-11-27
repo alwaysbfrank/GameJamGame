@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: 5088a87bf52ef2749b0868b6a8074419
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2245565882275978556
+    second: PlayerHumanWalk_0
+  - first:
+      213: -1781584769975639780
+    second: PlayerHumanWalk_1
+  - first:
+      213: -6154320863610309410
+    second: PlayerHumanWalk_2
+  - first:
+      213: -4855474787123857011
+    second: PlayerHumanWalk_3
+  - first:
+      213: 2521031277636358937
+    second: PlayerHumanWalk_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +86,126 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PlayerHumanWalk_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 30
+        width: 170
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c224334ab526d0e0800000000000000
+      internalID: -2245565882275978556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHumanWalk_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 30
+        width: 170
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c112b58471a8647e0800000000000000
+      internalID: -1781584769975639780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHumanWalk_2
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 30
+        width: 170
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed47bb218c5779aa0800000000000000
+      internalID: -6154320863610309410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHumanWalk_3
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 30
+        width: 180
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89fd911863ed9cb0800000000000000
+      internalID: -4855474787123857011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerHumanWalk_4
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 30
+        width: 180
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9131a2b07908cf220800000000000000
+      internalID: 2521031277636358937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -12,12 +12,17 @@ public class GasMovement : MonoBehaviour
     [Range(0, 100)] public float jumpPower;
     [Range(0, 100)] public float dashPower;
 
+    [Range(0, 1)] public float dashAccelerationTime;
+    [Range(0, 100)] public float dashBrakePower;
+
     private Rigidbody2D _rigidbody;
 
     private float _lastJump;
     private float _lastDash;
+    private bool _currentlyDashing;
 
     private SpriteRenderer _spriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +31,7 @@ public class GasMovement : MonoBehaviour
         _rigidbody.gravityScale = 0f;
         _lastJump = Time.time - jumpOffset;
         _lastDash = Time.time - dashOffset;
+        _currentlyDashing = false;
     }
 
     // Update is called once per frame
@@ -47,6 +53,11 @@ public class GasMovement : MonoBehaviour
 
     void MoveSideways()
     {
+        if (_currentlyDashing)
+        {
+            return;
+        }
+
         var xDisplacement = Input.GetAxis("Horizontal");
         var xSpeed = xDisplacement * sidewaysSpeed * Time.deltaTime;
         var current = _rigidbody.velocity;
@@ -77,8 +88,50 @@ public class GasMovement : MonoBehaviour
         {
             Debug.Log("Dash");
             _lastDash = Time.time;
-            var direction = _spriteRenderer.flipX ? Vector2.left : Vector2.right;
-            _rigidbody.AddForce(direction * dashPower, ForceMode2D.Impulse);
+            _currentlyDashing = true;
+            _rigidbody.velocity -= Vector2.right * _rigidbody.velocity.x;
         }
+
+        if (!_currentlyDashing)
+        {
+            return;
+        }
+        
+        if (Time.time - _lastDash < dashAccelerationTime)
+        {
+            AccelerateInDash();
+            return;
+        }
+
+        if (DecelerateInDash())
+        {
+            _currentlyDashing = false;
+        }
+    }
+
+    private bool DecelerateInDash()
+    {
+        var currentVel = _rigidbody.velocity;
+        var currentSpeedX = currentVel.x;
+        var direction = currentSpeedX < 0 ? 1f : -1f;
+        var newSpeed = currentSpeedX + direction * Time.deltaTime * dashBrakePower;
+        var result = direction > 0 == newSpeed > 0;
+        if (result)
+        {
+            newSpeed = 0f;
+        }
+
+        _rigidbody.velocity = new Vector2(newSpeed, currentVel.y);
+        return result;
+    }
+
+    private Vector2 GetDirection()
+    {
+        return _spriteRenderer.flipX ? Vector2.left : Vector2.right;
+    }
+
+    private void AccelerateInDash()
+    {
+        _rigidbody.velocity += GetDirection() * dashPower * Time.deltaTime;
     }
 }
