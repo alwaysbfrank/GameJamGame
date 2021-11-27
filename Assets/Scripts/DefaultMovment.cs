@@ -7,6 +7,7 @@ public class DefaultMovment : MonoBehaviour
     public int speed;
     public int jumpForce;
     public int sprintSpeed;
+    public bool isStone;
 
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -21,6 +22,7 @@ public class DefaultMovment : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         defultSpeed = speed;
         isGrounded = true;
+        isStone = false;
 
         //animator = GetComponent<Animator>();
         rb.freezeRotation = true;
@@ -31,6 +33,7 @@ public class DefaultMovment : MonoBehaviour
         Move();
         Jump();
         Sprint();
+        GameEventSystem.Instance.SetPlayerStone(isStone);
     }
 
     void Move()
