@@ -64,10 +64,9 @@ public class DefaultMovment : MonoBehaviour
 
     void Sprint()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && isGrounded)
         {
             speed = sprintSpeed;
-            ;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
