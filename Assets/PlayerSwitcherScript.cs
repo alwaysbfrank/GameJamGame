@@ -11,40 +11,14 @@ public class PlayerSwitcherScript : MonoBehaviour
 
     public GameObject playerGas;
 
+    public Vector3 startingPosition;
+
     private int currentState;
     // Start is called before the first frame update
     void Start()
     {
-        currentState = 1;
+        currentState = 0;
         ActivateHuman(transform.position);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetButtonDown("Fire2"))
-        {
-            SwitchState();
-        }
-    }
-
-    private void SwitchState()
-    {
-        switch (currentState)
-        {
-            case 0:
-                FromHumanToStone();
-                currentState = 1;
-                return;
-            case 1:
-                FromStoneToGas();
-                currentState = 2;
-                return;
-            case 2:
-                FromGasToHuman();
-                currentState = 0;
-                return;
-        }
     }
 
     void FromHumanToStone()
@@ -52,14 +26,19 @@ public class PlayerSwitcherScript : MonoBehaviour
         ActivateStone(playerHuman.transform.position);
     }
 
+    void FromStoneToHuman()
+    {
+        ActivateHuman(playerStone.transform.position);
+    }
+
     void FromGasToHuman()
     {
         ActivateHuman(playerGas.transform.position);
     }
 
-    void FromStoneToGas()
+    void FromHumanToGas()
     {
-        ActivateGas(playerStone.transform.position);
+        ActivateGas(playerHuman.transform.position);
     }
 
     void ActivateHuman(Vector3 position)
