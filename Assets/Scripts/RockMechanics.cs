@@ -17,6 +17,7 @@ public class RockMechanics : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         timer = 0;
         rb.mass = 10;
+        rb.freezeRotation = false;
     }
 
     void FixedUpdate()
