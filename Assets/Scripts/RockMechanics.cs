@@ -11,8 +11,6 @@ public class RockMechanics : MonoBehaviour
     private float timer;
     public float rotationSpeed;
     private bool isGrounded;
-    public GameObject normal;
-    public ParticleSystem partSys;
 
     void Start()
     {
@@ -43,6 +41,10 @@ public class RockMechanics : MonoBehaviour
         if (isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x / 2, rb.velocity.y);
+            if (Input.GetButtonDown("Jump"))
+            {
+                rb.AddForce(new Vector2(0, force), ForceMode2D.Impulse);
+            }
         }
         timer += Time.fixedDeltaTime;
     }
@@ -55,18 +57,6 @@ public class RockMechanics : MonoBehaviour
             isGrounded = true;
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Water"))
-        {
-            partSys.Play();
-            //Instantiate(normal, transform.position, new Quaternion(0, 0, 0, 0));
-            //gameObject.SetActive(false);
-        }
-    }
-
-
 
 
     private void OnCollisionStay2D(Collision2D collision)
