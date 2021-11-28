@@ -1,7 +1,40 @@
 fileFormatVersion: 2
 guid: 910158e71a2a784419ac14048aa8db20
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3260189267276230589
+    second: ButtonsAlone_0
+  - first:
+      213: 5027465068532445690
+    second: ButtonsAlone_1
+  - first:
+      213: 5903978783422048417
+    second: ButtonsAlone_2
+  - first:
+      213: -5995932011279879561
+    second: ButtonsAlone_3
+  - first:
+      213: -8299247521118381920
+    second: ButtonsAlone_4
+  - first:
+      213: -3116505916306900116
+    second: ButtonsAlone_5
+  - first:
+      213: -6421573108829511574
+    second: ButtonsAlone_6
+  - first:
+      213: -7191345787854308732
+    second: ButtonsAlone_7
+  - first:
+      213: 5385871039329882352
+    second: ButtonsAlone_8
+  - first:
+      213: -6584495039255345715
+    second: ButtonsAlone_9
+  - first:
+      213: 1898909218098745008
+    second: ButtonsAlone_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +73,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +104,252 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ButtonsAlone_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 92
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3409577722b71c2d0800000000000000
+      internalID: -3260189267276230589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsAlone_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 91
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1bf8ad7d425c540800000000000000
+      internalID: 5027465068532445690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsAlone_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 92
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a860534c652fe150800000000000000
+      internalID: 5903978783422048417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsAlone_3
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 92
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772f4428a9b2acca0800000000000000
+      internalID: -5995932011279879561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsAlone_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 92
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a892b0d95623dc80800000000000000
+      internalID: -8299247521118381920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsAlone_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 91
+        width: 35
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bbf1e8162ffb4d0800000000000000
+      internalID: -3116505916306900116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsAlone_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 24
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60240dc74df1e6a0800000000000000
+      internalID: -6421573108829511574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsAlone_7
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 24
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a31f97b15333c90800000000000000
+      internalID: -7191345787854308732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsAlone_8
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 28
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f05259bc257eba40800000000000000
+      internalID: 5385871039329882352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsAlone_9
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 28
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc50ddfd5ac2f94a0800000000000000
+      internalID: -6584495039255345715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsAlone_10
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 28
+        width: 45
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be8d7d7fd74a5a10800000000000000
+      internalID: 1898909218098745008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
