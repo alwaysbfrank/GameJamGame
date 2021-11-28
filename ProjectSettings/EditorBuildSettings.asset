@@ -14,4 +14,43 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Instruction.unity
     guid: 59e868ec019c0934e9e7fdf9ef51f75b
+  - enabled: 1
+    path: Assets/Scenes/00_level1.unity
+    guid: d549224cf72c4a1428853fb9f7a01b57
+  - enabled: 1
+    path: Assets/Scenes/00_level2.unity
+    guid: 4bb495efb5e501f42971844ab15df27f
+  - enabled: 1
+    path: Assets/Scenes/00_level3.unity
+    guid: c036606125ae6ea4e92d02d3b715fe38
+  - enabled: 1
+    path: Assets/Scenes/00_level5.unity
+    guid: 93673be0c2c07354f8d3dadcce10af84
+  - enabled: 1
+    path: Assets/Scenes/00_level6.unity
+    guid: d0fe245ad12758b4584a9ffe4d073ceb
+  - enabled: 1
+    path: Assets/Scenes/00_level99.unity
+    guid: 43eea0e59d2f38d4eb534066c03ff41a
+  - enabled: 1
+    path: Assets/Scenes/00_level_Final.unity
+    guid: f4f05934282d4384391790a1cdb11ebe
+  - enabled: 1
+    path: Assets/Scenes/Bohdan.unity
+    guid: 0336f87ca2f53cc41b0d2e8dcd52b533
+  - enabled: 1
+    path: Assets/Scenes/Franek.unity
+    guid: 51922b82a65bf424cb193c242e544486
+  - enabled: 1
+    path: Assets/Scenes/Grzesiek.unity
+    guid: f96a9da4b16c3d744b601bc278c61158
+  - enabled: 1
+    path: Assets/Scenes/PlayerSwitchingPOC.unity
+    guid: cd8d3d2bb9d5d4d418713cc611034020
+  - enabled: 1
+    path: Assets/Scenes/Przemek.unity
+    guid: 8513999883fdff44d91c99c48990ba73
+  - enabled: 1
+    path: "Assets/Scenes/\u0141ukasz.unity"
+    guid: e665152a220292f40b1fc716c29fd56d
   m_configObjects: {}
