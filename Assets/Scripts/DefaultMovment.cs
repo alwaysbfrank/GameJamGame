@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DefaultMovment : MonoBehaviour
 {
@@ -8,7 +9,6 @@ public class DefaultMovment : MonoBehaviour
     public int jumpForce;
     public int sprintSpeed;
     public int fallDamageThreshold;
-    public bool isStone;
 
     private Rigidbody2D rb;
     //private bool isGrounded;
@@ -27,7 +27,6 @@ public class DefaultMovment : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         defultSpeed = speed;
         //isGrounded = true;
-        isStone = false;
         //animator = GetComponent<Animator>();
         rb.freezeRotation = true;
     }
@@ -36,7 +35,7 @@ public class DefaultMovment : MonoBehaviour
     {
         Move();
         Jump();
-        Sprint();
+        //Sprint();
     }
 
     void Move()
@@ -77,7 +76,7 @@ public class DefaultMovment : MonoBehaviour
         }
         if (maxYVel < fallDamageThreshold && rb.velocity.y == 0)
         {
-            //Destroy(gameObject);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             Debug.Log("Death");
         }
     }

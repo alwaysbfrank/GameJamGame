@@ -24,7 +24,6 @@ public class ConveyorBelt : MonoBehaviour
     {
         Vector3 displacementVector = new Vector3(-1, 0, 0);
         collision.gameObject.transform.Translate(displacementVector * speed * Time.deltaTime);
-        Debug.Log("Left");
         yield return new WaitForSeconds(1);
     }
 
@@ -32,7 +31,6 @@ public class ConveyorBelt : MonoBehaviour
     {
         Vector3 displacementVector = new Vector3(1, 0, 0);
         collision.gameObject.transform.Translate(displacementVector * speed * Time.deltaTime);
-        Debug.Log("Right");
         yield return new WaitForSeconds(1);
     }
 }
