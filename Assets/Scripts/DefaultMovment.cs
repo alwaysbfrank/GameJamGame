@@ -15,11 +15,14 @@ public class DefaultMovment : MonoBehaviour
     private int defultSpeed;
     private SpriteRenderer sr;
     private float maxYVel;
+
+    private Animator _animator;
     //private Animator animator;
 
 
     void Start()
     {
+        _animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         defultSpeed = speed;
@@ -61,6 +64,7 @@ public class DefaultMovment : MonoBehaviour
         {
             //isGrounded = false;
             maxYVel = 0;
+            _animator.SetBool("isJumping", true);
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             //animator.SetBool("Jump", true);
         }
@@ -89,15 +93,14 @@ public class DefaultMovment : MonoBehaviour
             speed = defultSpeed;
         }
     }
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Ground"))
-    //    {
-    //        isGrounded = true;
-    //        //animator.SetBool("Jump", false);
-    //    }
-    //}
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground") && rb.velocity.y == 0)
+        {
+            _animator.SetBool("isJumping", false);
+        }
+    }
 
     //private void OnCollisionExit2D(Collision2D collision)
     //{
