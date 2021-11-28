@@ -1034,5 +1034,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerSwitcher
       objectReference: {fileID: 0}
+    - target: {fileID: 2436259651789776613, guid: 1613bf96b1d35e544bf0d7cda90bcb1e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2637329716082942096, guid: 1613bf96b1d35e544bf0d7cda90bcb1e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1613bf96b1d35e544bf0d7cda90bcb1e, type: 3}
