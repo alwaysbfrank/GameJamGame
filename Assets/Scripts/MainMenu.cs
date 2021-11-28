@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void newGame()
     {
-        SceneManager.LoadScene("Grzesiek");
+        SceneManager.LoadScene("00_level1");
     }
 
     public void credits()
