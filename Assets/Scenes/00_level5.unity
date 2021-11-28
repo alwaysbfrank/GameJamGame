@@ -9597,6 +9597,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1435836705932008164, guid: 9d1bfabece5f217429da59540f6d39d6,
         type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435836705932008164, guid: 9d1bfabece5f217429da59540f6d39d6,
+        type: 3}
       propertyPath: ShapeModule.type
       value: 8
       objectReference: {fileID: 0}
@@ -9613,7 +9618,7 @@ PrefabInstance:
     - target: {fileID: 1435836705932008164, guid: 9d1bfabece5f217429da59540f6d39d6,
         type: 3}
       propertyPath: ShapeModule.radiusThickness
-      value: 1.0000
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1435836705932008164, guid: 9d1bfabece5f217429da59540f6d39d6,
         type: 3}
@@ -9689,6 +9694,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SteamParticles
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510760818345634638, guid: 9d1bfabece5f217429da59540f6d39d6,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d1bfabece5f217429da59540f6d39d6, type: 3}
