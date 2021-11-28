@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 375e88cb27c13e64bb0058324b8d0257
+guid: 04d2b7a082213304896a1069e537b7d3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2171869769579782635
-    second: ConveyorBelt_0
+      213: 5363930417848331218
+    second: Kratki_0
   - first:
-      213: 4388537090076405951
-    second: ConveyorBelt_1
+      213: 6084017507203631079
+    second: Kratki_1
+  - first:
+      213: 8934711461740296516
+    second: Kratki_2
+  - first:
+      213: -2972890689865342245
+    second: Kratki_3
+  - first:
+      213: 3138255485230987974
+    second: Kratki_4
+  - first:
+      213: -5571585655536392673
+    second: Kratki_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 33
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ConveyorBelt_0
+      name: Kratki_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 18
-        width: 426
-        height: 10
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -107,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51e99cd93f7fbd1e0800000000000000
-      internalID: -2171869769579782635
+      spriteID: 2db23c3bb42807a40800000000000000
+      internalID: 5363930417848331218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ConveyorBelt_1
+      name: Kratki_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 426
-        height: 10
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb071a16b3737ec30800000000000000
-      internalID: 4388537090076405951
+      spriteID: 7e7412430b5ce6450800000000000000
+      internalID: 6084017507203631079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kratki_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44934af7cb87efb70800000000000000
+      internalID: 8934711461740296516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kratki_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2a28a2bab2eb6d0800000000000000
+      internalID: -2972890689865342245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kratki_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca3d939cb25d8b20800000000000000
+      internalID: 3138255485230987974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kratki_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f166716ad50cda2b0800000000000000
+      internalID: -5571585655536392673
       vertices: []
       indices: 
       edges: []
