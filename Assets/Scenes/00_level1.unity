@@ -569,7 +569,7 @@ PrefabInstance:
     - target: {fileID: 1720880322581555448, guid: 1613bf96b1d35e544bf0d7cda90bcb1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.6962123
+      value: -10.19
       objectReference: {fileID: 0}
     - target: {fileID: 1720880322581555448, guid: 1613bf96b1d35e544bf0d7cda90bcb1e,
         type: 3}
@@ -687,7 +687,7 @@ SpriteRenderer:
   m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1485219607
@@ -739,7 +739,7 @@ PrefabInstance:
     - target: {fileID: 5566697198009567793, guid: 3a8b75621db7b4c44b64291a67510fc4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.29
+      value: 11.04
       objectReference: {fileID: 0}
     - target: {fileID: 5566697198009567793, guid: 3a8b75621db7b4c44b64291a67510fc4,
         type: 3}
@@ -3937,7 +3937,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.573267
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
