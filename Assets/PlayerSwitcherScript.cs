@@ -60,6 +60,7 @@ public class PlayerSwitcherScript : MonoBehaviour
 
     void ActivateHuman(Vector3 position)
     {
+        Debug.Log("Activation as Human at " + position);
         playerStone.SetActive(false);
         playerGas.SetActive(false);
         playerHuman.transform.position = position;
@@ -68,6 +69,7 @@ public class PlayerSwitcherScript : MonoBehaviour
 
     void ActivateGas(Vector3 position)
     {
+        Debug.Log("Activation as Gas at " + position);
         playerStone.SetActive(false);
         playerHuman.SetActive(false);
         playerGas.transform.position = position;
@@ -76,6 +78,7 @@ public class PlayerSwitcherScript : MonoBehaviour
 
     void ActivateStone(Vector3 position)
     {
+        Debug.Log("Activation as Stone at " + position);
         playerGas.SetActive(false);
         playerHuman.SetActive(false);
         playerStone.transform.position = position;

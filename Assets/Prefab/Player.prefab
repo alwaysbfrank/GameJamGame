@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gasThreshold: 100
-  heatPower: 36.1
+  heatPower: 55.3
   tolerance: 1
 --- !u!114 &1720880323582890391
 MonoBehaviour:
@@ -236,6 +236,11 @@ PrefabInstance:
         type: 3}
       propertyPath: heatRate
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 738523306427449948, guid: 0e88c8fce7b45074b88c72551f66592a,
+        type: 3}
+      propertyPath: sidewaysSpeed
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 738523306427449950, guid: 0e88c8fce7b45074b88c72551f66592a,
         type: 3}
@@ -338,6 +343,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerRock
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904232439174317671, guid: 16b7a3c3b24723f4c8f1a608b5a779b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8319023173803914699, guid: 16b7a3c3b24723f4c8f1a608b5a779b5,
         type: 3}
@@ -504,6 +514,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerHuman
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708827466246220470, guid: acb570f26cbeb724abb539176c65cd41,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acb570f26cbeb724abb539176c65cd41, type: 3}
