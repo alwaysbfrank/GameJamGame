@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3087462559085675207}
   - component: {fileID: 4932356557513871105}
   - component: {fileID: 7524546567403073548}
+  - component: {fileID: 4865372799602807833}
   m_Layer: 0
   m_Name: Fire
-  m_TagString: Untagged
+  m_TagString: Heat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4766,3 +4767,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!70 &4865372799602807833
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7199167041906700861}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.2, y: 0.51}
+  m_Size: {x: 3.09, y: 1.21}
+  m_Direction: 0
