@@ -35,6 +35,7 @@ public class DefaultMovment : MonoBehaviour
     {
         Move();
         Jump();
+        _animator.SetFloat("yVelocity", rb.velocity.y);
         //Sprint();
     }
 
