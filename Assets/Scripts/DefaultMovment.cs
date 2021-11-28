@@ -36,12 +36,16 @@ public class DefaultMovment : MonoBehaviour
         maxYVel = 0;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Move();
-        Jump();
         _animator.SetFloat("yVelocity", rb.velocity.y);
         //Sprint();
+    }
+
+    private void Update()
+    {
+        Jump();
     }
 
     void Move()
@@ -58,7 +62,7 @@ public class DefaultMovment : MonoBehaviour
         }
 
         Vector3 displacementVector = new Vector3(xDisplacement, 0, 0);
-        transform.Translate(displacementVector * speed * Time.deltaTime);
+        transform.Translate(displacementVector * speed * Time.fixedDeltaTime);
 
         //animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
     }

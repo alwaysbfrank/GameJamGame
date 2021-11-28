@@ -35,7 +35,7 @@ public class GasMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         MoveSideways();
         AccelerateUpwards();
@@ -47,7 +47,7 @@ public class GasMovement : MonoBehaviour
     {
         if (_rigidbody.velocity.y < maxUpwardsSpeed)
         {
-            _rigidbody.velocity += Vector2.up * upwardsAcceleration * Time.deltaTime;
+            _rigidbody.velocity += Vector2.up * upwardsAcceleration * Time.fixedDeltaTime;
         }
     }
 
@@ -59,9 +59,10 @@ public class GasMovement : MonoBehaviour
         }
 
         var xDisplacement = Input.GetAxis("Horizontal");
-        var xSpeed = xDisplacement * sidewaysSpeed * Time.deltaTime;
-        var current = _rigidbody.velocity;
-        _rigidbody.velocity = new Vector2(xSpeed, current.y);
+        var xSpeed = xDisplacement;
+        transform.Translate(new Vector2(xDisplacement * sidewaysSpeed * Time.fixedDeltaTime, 0));
+        //var current = _rigidbody.velocity;
+        //_rigidbody.velocity = new Vector2(xSpeed, current.y);
         TryFlipSprite(xDisplacement);
     }
 
@@ -96,7 +97,7 @@ public class GasMovement : MonoBehaviour
         {
             return;
         }
-        
+
         if (Time.time - _lastDash < dashAccelerationTime)
         {
             AccelerateInDash();
@@ -114,7 +115,7 @@ public class GasMovement : MonoBehaviour
         var currentVel = _rigidbody.velocity;
         var currentSpeedX = currentVel.x;
         var direction = currentSpeedX < 0 ? 1f : -1f;
-        var newSpeed = currentSpeedX + direction * Time.deltaTime * dashBrakePower;
+        var newSpeed = currentSpeedX + direction * Time.fixedDeltaTime * dashBrakePower;
         var result = direction > 0 == newSpeed > 0;
         if (result)
         {
@@ -132,6 +133,6 @@ public class GasMovement : MonoBehaviour
 
     private void AccelerateInDash()
     {
-        _rigidbody.velocity += GetDirection() * dashPower * Time.deltaTime;
+        _rigidbody.velocity += GetDirection() * dashPower * Time.fixedDeltaTime;
     }
 }

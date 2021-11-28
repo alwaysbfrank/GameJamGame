@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 738523306427449947}
   m_Layer: 0
   m_Name: PlayerGas
-  m_TagString: Untagged
+  m_TagString: PlayerGas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

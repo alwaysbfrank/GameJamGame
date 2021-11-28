@@ -8,9 +8,12 @@ public class Particles : MonoBehaviour
     public ParticleSystem rocks;
     public ParticleSystem steam;
 
+    public AudioSource audio;
+
     private void throwRocks()
     {
         rocks.Play();
+        audio.Play();
     }
 
     private void releaseClouds()
