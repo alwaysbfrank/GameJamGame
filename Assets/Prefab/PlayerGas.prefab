@@ -159,7 +159,7 @@ MonoBehaviour:
   sidewaysSpeed: 484
   jumpOffset: 0.1741
   dashOffset: 0.583
-  jumpPower: 6.3
+  jumpPower: 21.6
   dashPower: 93.7
   dashAccelerationTime: 0.203
   dashBrakePower: 70.6

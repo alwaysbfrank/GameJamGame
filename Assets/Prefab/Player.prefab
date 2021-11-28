@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gasThreshold: 100
-  heatPower: 30.6
+  heatPower: 14.3
   tolerance: 1
 --- !u!114 &1720880323582890391
 MonoBehaviour:
