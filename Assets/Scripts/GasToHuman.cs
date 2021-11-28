@@ -27,12 +27,12 @@ public class GasToHuman : MonoBehaviour
 
     private void Update()
     {
-        LogState();
+        //LogState();
         HeatUp();
 
         if (ShouldBeGas())
         {
-            Debug.Log("Firing event");
+            //Debug.Log("Firing event");
             PlayerSwitcherEventSystem.SwitchFromGasToHuman();
         }
     }

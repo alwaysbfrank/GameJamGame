@@ -66,28 +66,28 @@ public class HumanToGas : MonoBehaviour
     {
         if (ShouldBeGas())
         {
-            Debug.Log("I am gas");
+            //Debug.Log("I am gas");
             return;
         }
 
         if (isCurrentlyHeated)
         {
-            Debug.Log("Heating in progress");
+            //Debug.Log("Heating in progress");
             return;
         }
 
         if (currentTemp > 0f)
         {
-            Debug.Log("Cooling in progress");
+            //Debug.Log("Cooling in progress");
             return;
         }
 
-        Debug.Log("I am a cool guy");
+        //Debug.Log("I am a cool guy");
     }
 
     private void HeatUp()
     {
-        currentTemp += heatRate * Time.deltaTime;
+        currentTemp += 105;
     }
 
     private void CoolDown()

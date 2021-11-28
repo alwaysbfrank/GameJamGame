@@ -79,6 +79,7 @@ public class PlayerSwitcherScript : MonoBehaviour
         playerGas.SetActive(false);
         playerHuman.SetActive(false);
         playerStone.transform.position = position;
+        playerStone.transform.rotation = new Quaternion(0, 0, 0, 0);
         playerStone.SetActive(true);
     }
 }

@@ -14,7 +14,7 @@ public class DefaultMovment : MonoBehaviour
     //private bool isGrounded;
     private int defultSpeed;
     private SpriteRenderer sr;
-    private float maxYVel;
+    public float maxYVel;
 
     private Animator _animator;
     //private Animator animator;
@@ -29,6 +29,11 @@ public class DefaultMovment : MonoBehaviour
         //isGrounded = true;
         //animator = GetComponent<Animator>();
         rb.freezeRotation = true;
+    }
+
+    private void OnEnable()
+    {
+        maxYVel = 0;
     }
 
     void Update()
@@ -78,7 +83,7 @@ public class DefaultMovment : MonoBehaviour
         if (maxYVel < fallDamageThreshold && rb.velocity.y == 0)
         {
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            Debug.Log("Death");
+            Debug.Log("Death - velocity: " + maxYVel);
         }
     }
 
@@ -93,7 +98,7 @@ public class DefaultMovment : MonoBehaviour
             speed = defultSpeed;
         }
     }
-    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground") && rb.velocity.y == 0)

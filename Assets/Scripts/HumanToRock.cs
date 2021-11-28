@@ -22,19 +22,19 @@ public class HumanToRock : MonoBehaviour
         _current = 0f;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         //Debug.Log("turnToRock: " + _current);
         var xSpeed = Input.GetAxis("Horizontal");
-        Debug.Log("My velocity: " + xSpeed);
+        //Debug.Log("My velocity: " + xSpeed);
         if (xSpeed == 0f)
         {
             _animator.SetBool("isMoving", false);
-            _current += rate * Time.deltaTime;
+            _current += rate * Time.fixedDeltaTime;
         }
         else
         {
-            Debug.Log("I MOVE");
+            //Debug.Log("I MOVE");
             _animator.SetBool("isMoving", true);
             _current = 0f;
         }

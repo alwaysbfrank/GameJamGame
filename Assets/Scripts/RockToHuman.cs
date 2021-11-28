@@ -18,7 +18,7 @@ public class RockToHuman : MonoBehaviour
     {
         if (other.IsWater())
         {
-            Debug.Log("Soaking");
+            //Debug.Log("Soaking");
             _current += rate * Time.deltaTime;
         }
     }
@@ -27,7 +27,7 @@ public class RockToHuman : MonoBehaviour
     {
         if (_current > 100)
         {
-            Debug.Log("Switching to human");
+            //Debug.Log("Switching to human");
             PlayerSwitcherEventSystem.SwitchFromStoneToHuman();
         }
     }
