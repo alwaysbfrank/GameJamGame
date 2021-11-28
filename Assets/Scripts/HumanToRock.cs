@@ -39,7 +39,7 @@ public class HumanToRock : MonoBehaviour
             _current = 0f;
         }
 
-        if (_current > 100)
+        if (_current > 100 && !_animator.GetBool("soaks"))
         {
             PlayerSwitcherEventSystem.SwitchFromHumanToStone();
         }

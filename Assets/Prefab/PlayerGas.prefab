@@ -177,4 +177,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heatRate: 0
   cooldownRate: 0
-  partSys: {fileID: 5541500747095054345, guid: 9d1bfabece5f217429da59540f6d39d6, type: 3}

@@ -139,6 +139,21 @@ PrefabInstance:
       propertyPath: heatRate
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 738523306427449950, guid: 0e88c8fce7b45074b88c72551f66592a,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 738523306427449950, guid: 0e88c8fce7b45074b88c72551f66592a,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 738523306427449950, guid: 0e88c8fce7b45074b88c72551f66592a,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 738523306427449951, guid: 0e88c8fce7b45074b88c72551f66592a,
         type: 3}
       propertyPath: m_RootOrder
@@ -526,7 +541,7 @@ PrefabInstance:
     - target: {fileID: 9006366778539077679, guid: 388dcdc5275eb0140905aa992d715ca0,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 388dcdc5275eb0140905aa992d715ca0, type: 3}
