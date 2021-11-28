@@ -858,12 +858,12 @@ PrefabInstance:
     - target: {fileID: 4862458396946345972, guid: 7b375216335d6f349996231ad29a3055,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.14
+      value: -12.39
       objectReference: {fileID: 0}
     - target: {fileID: 4862458396946345972, guid: 7b375216335d6f349996231ad29a3055,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.95
+      value: 5.56
       objectReference: {fileID: 0}
     - target: {fileID: 4862458396946345972, guid: 7b375216335d6f349996231ad29a3055,
         type: 3}
@@ -904,6 +904,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862458396946345973, guid: 7b375216335d6f349996231ad29a3055,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862458396946345973, guid: 7b375216335d6f349996231ad29a3055,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 4862458396946345975, guid: 7b375216335d6f349996231ad29a3055,
         type: 3}
